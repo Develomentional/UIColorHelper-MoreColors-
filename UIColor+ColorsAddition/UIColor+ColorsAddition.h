@@ -1,13 +1,40 @@
-This category is inspired by the post Jeff LaMarche.
+//
+//  UIColorHelper.h
+//  Vadeara Cocoa Helpers
+//
+//  Created by Voda Ion on 23/04/12.
+//  Copyright (c) 2008-2009 vadeara
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
-I decided to make category that includes all the colors that Wikipedia lists (http://en.wikipedia.org/wiki/List_of_colors".
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
 
 /*
  * Convenience method to return a UIColor with RGB values based on 255
  */
-UIColor* UIColorMakeRGB(CGFloat red, CGFloat green, CGFloat blue); 
 
-The category adds the following methods to UIColor:
+UIColor* UIColorMakeRGB(CGFloat red, CGFloat green, CGFloat blue); 
+UIColor* UIColorWitAlpha(UIColor *color, int alpha);
+
+@interface UIColor (MoreColors)
 + (id)aliceBlue;
 + (id)alizarin;
 + (id)amaranth;
@@ -339,3 +366,6 @@ The category adds the following methods to UIColor:
 + (id)yellowGreen;
 
 + (id)zinnwaldite;
+
+@end
+#endif
