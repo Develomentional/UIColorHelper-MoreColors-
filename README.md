@@ -1,13 +1,12 @@
-This category is inspired by the post Jeff LaMarche.
+
 
 I decided to make category that includes all the colors that Wikipedia lists (http://en.wikipedia.org/wiki/List_of_colors".
 
-/*
- * Convenience method to return a UIColor with RGB values based on 255
- */
-UIColor* UIColorMakeRGB(CGFloat red, CGFloat green, CGFloat blue); 
 
-The category adds the following methods to UIColor:
+UIColor* UIColorMakeRGB(CGFloat red, CGFloat green, CGFloat blue); 
+UIColor* UIColorWitAlpha(UIColor *color, CGFloat alpha);
+
+@interface UIColor (MoreColors)
 + (id)aliceBlue;
 + (id)alizarin;
 + (id)amaranth;
@@ -339,3 +338,5 @@ The category adds the following methods to UIColor:
 + (id)yellowGreen;
 
 + (id)zinnwaldite;
+ 
+@end
