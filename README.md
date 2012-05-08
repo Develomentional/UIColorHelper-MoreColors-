@@ -1,5 +1,4 @@
 
-
 I decided to make category that includes all the colors that Wikipedia lists (http://en.wikipedia.org/wiki/List_of_colors".
 
 
